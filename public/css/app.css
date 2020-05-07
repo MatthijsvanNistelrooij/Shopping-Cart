@@ -1,0 +1,27 @@
+img {
+    border-radius: 8px;
+    max-width: 100%;
+width: auto;
+    padding: 5px;
+}
+
+.text-muted {
+    font-weight: bold;
+    font-size: 19px;
+    color: black !important;
+}
+
+
+.btn-group {
+align-items: right;
+}
+
+.row  {
+    margin: 2%;
+
+
+}
+
+.navbar {
+    width: 100%;
+}
