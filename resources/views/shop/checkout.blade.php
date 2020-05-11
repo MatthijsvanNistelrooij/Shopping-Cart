@@ -7,71 +7,22 @@
 
 
 @section('content')
+<br><br><br>
 <div class="row" style="border: 1px solid gray">
 
 
-    {{-- <div class="row-md-8"> --}}
-        {{-- <div class="col-sm-12">
-        <h1>Checkout</h1>
-
-        <br>
-        <form action="{{ route('checkout') }}" method="post" id="checkout-form"> --}}
-
     <div class="col-md-8 order-md-2 mb-8">
 <br>
-        <h4>Your Total: ${{ $total}},00</h4>
+
         <br><br>
 
-        {{-- <span class="text-muted">Your cart</span> --}}
-        {{-- <span class="badge badge badge-secondary badge-pill">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span> --}}
 
-      {{-- <ul class="list-group mb-3">
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Product name</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$12</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Second product</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$8</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Third item</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between bg-light">
-          <div class="text-success">
-            <h6 class="my-0">Promo code</h6>
-            <small>EXAMPLECODE</small>
-          </div>
-          <span class="text-success">-$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Total (USD)</span>
-          <strong>$20</strong>
-        </li>
-      </ul> --}}
-
-      {{-- <form class="card p-2">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Promo code">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
-        </div>
-      </form> --}}
     </div>
-    <div class="col-md-8 order-md-1">
+
+    <div class="col-md-8 order-md-1" style="margin-left: 20%">
+        <br><br><br>
       <h4 class="mb-3">Billing address</h4>
-      <form class="needs-validation" novalidate>
+      <form class="needs-validation" novalidate  >
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">First name</label>
@@ -213,6 +164,10 @@
           </div>
         </div>
         <hr class="mb-4">
+
+      {{ csrf_field() }}
+
+      <h4>Your Total: ${{ $total}},00</h4>
         <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
       </form>
     </div>
@@ -259,76 +214,4 @@
   })();
 </script>
 
-{{--
-<div class="container">
-
-    <div class="row-md-8">
-    <div class="col-sm-12">
-    <h1>Checkout</h1>
-    <h4>Your Total: $ {{ $total}},00</h4>
-    <br>
-    <form action="{{ route('checkout') }}" method="post" id="checkout-form">
-
-<div class="row">
-
-</div>
-<div class="col-md-8">
-    <div class="form-group">
-        <label for="name"> <strong>Name</strong></label>
-        <input type="text" id="name" class="form-control" required>
-    </div>
-</div>
-        <div class="col-md-8">
-            <div class="form-group">
-                <label for="address"><strong>Address</strong></label>
-                <input type="text" id="address" class="form-control" required>
-            </div>
-        </div>
-
-
-        <div class="col-md-8">
-            <div class="form-group">
-                <label for="card-name"><strong>Card Holder Name</strong></label>
-                <input type="text" id="card-name" class="form-control" required>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="form-group">
-                <label for="card-number"><strong>Credit Card Number</strong></label>
-                <input type="text" id="card-number" class="form-control" required>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="form-group">
-                <label for="card-expiry-month"><strong>Expiration Month</strong></label>
-                <input type="text" id="card-expiry-month" class="form-control" required>
-            </div></div>
-  <div class="col-md-4">
-            <div class="form-group">
-                <label for="card-expiry-year"><strong>Expiration Year</strong></label>
-                <input type="text" id="card-expiry-year" class="form-control" required>
-
-            </div></div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                <label for="card-expiry-year"><strong>CVC</strong></label>
-                <input type="text" id="card-cvc" class="form-control" required>
-
-
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-
-            </div>
-        </div>
-
-      {{ csrf_field() }}
-<button type="submit" class="btn btn-success">Buy now</button>
-        </form>
-
-        </div>
-    </div>
-</div> --}}
 @endsection

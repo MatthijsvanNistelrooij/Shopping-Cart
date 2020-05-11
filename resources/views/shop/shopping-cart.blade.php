@@ -66,7 +66,7 @@
                         </tr>
 						<tr>
 
-							<td><a href="/" class="btn btn-warning" style="width: 180px"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td><a href="/" class="btn btn-warning" style="color: white"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
 
                             <td><strong>Total ${{ $totalPrice }},00</strong></td>
                             <td></td>
