@@ -13,44 +13,44 @@ class ProductTableSeeder extends Seeder
     {
         $product = new \App\Product([
             'imagePath' => 'images/product6.jpg',
-            'title' => 'Raybon Watch',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            'title' => 'Carbon Watch',
+            'description' => 'Lorem ipsum dolor sit amet, x ea commodo consequat. ',
             'price' => 125
         ]);
         $product->save();
 
         $product = new \App\Product([
             'imagePath' => 'images/product5.jpg',
-            'title' => 'Raybon Watch',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            'title' => 'Sunshine Watch',
+            'description' => 'Lorem ipsum dolor sit amet,ex ea commodo consequat. ',
             'price' => 225
         ]);
         $product->save();
         $product = new \App\Product([
             'imagePath' => 'images/product3.jpg',
-            'title' => 'Raybon Watch',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            'title' => 'Illustrator Watch',
+            'description' => 'Lorem ipsum dolor sit amet, x ea commodo consequat. ',
             'price' => 325
         ]);
         $product->save();
         $product = new \App\Product([
             'imagePath' => 'images/product4.jpg',
-            'title' => 'Raybon Watch',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            'title' => 'Illustrator II Watch',
+            'description' => 'Lorem ipsum dolor sit amet, x ea commodo consequat. ',
             'price' => 325
         ]);
         $product->save();
         $product = new \App\Product([
             'imagePath' => 'images/product2.jpg',
-            'title' => 'Raybar Watch',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            'title' => 'Razor Watch',
+            'description' => 'Lorem ipsum dolor sit amet, c ea commodo consequat. ',
             'price' => 453
         ]);
         $product->save();
         $product = new \App\Product([
             'imagePath' => 'images/product1.jpg',
             'title' => 'Raybon Watch',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+            'description' => 'Lorem ipsum dolor sit amet, x ea commodo consequat. ',
             'price' => 125
         ]);
         $product->save();

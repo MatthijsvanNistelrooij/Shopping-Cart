@@ -23,22 +23,46 @@ Route::get('/signup', [
     'as' => 'user.signup'
 ]);
 
+Route::get('/add-to-cart/{id}', [
+    'uses' => 'ProductController@getAddToCart',
+    'as' => 'product.addToCart'
+]);
+
+Route::get('/shopping-cart', [
+    'uses' => 'ProductController@getCart',
+    'as' => 'product.shoppingCart'
+]);
+
+
+Route::get('/checkout', [
+    'uses' => 'ProductController@getCheckout',
+    'as' => 'checkout'
+]);
+
+Route::post('/checkout', [
+    'uses' => 'productController@postCheckout',
+    ' as' => 'checkout'
+]);
+
+
+
 Route::post('/signup', [
     'uses' => 'UserController@postSignup',
     'as' => 'user.signup'
 ]);
 
+Route::get('/signin', [
+    'uses' => 'UserController@getSignin',
+    'as' => 'user.signin'
+]);
+
+Route::post('/signin', [
+    'uses' => 'UserController@postSignin',
+    'as' => 'user.signin'
+]);
 
 
 
-Route::get('/profile', function () {
-    return view('user.profile');
-});
-
-
-// Route::get('/master', function () {
-//     return view('layouts.master');
-// });
 
 Auth::routes();
 
@@ -46,3 +70,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+
+
+
+Route::get('/profile', function () {
+    return view('profile');
+});

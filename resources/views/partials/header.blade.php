@@ -10,7 +10,11 @@
       <ul class="navbar-nav ml-auto">
 
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('home') }}">    <i class="fa fa-shopping-cart" style="color: orange"></i>  Shopping Cart</a>
+          <a class="nav-link" href="{{ route('product.shoppingCart') }}">
+            <i class="fa fa-shopping-cart" style="color: orange">
+            </i>  Shopping Cart
+        <span class="badge badge badge-secondary badge-pill">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+        </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -19,7 +23,7 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ route('register') }}"><i class="fa fa-check" style="color: orange"></i>  Register</a>
             <a class="dropdown-item" href="{{ route('login') }}"> <i class="fa fa-sign-in" aria-hidden="true" style="color: orange"></i>&nbsp; Login</a>
-            <a class="dropdown-item" href="home"> <i class="fa fa-user" aria-hidden="true" style="color: orange"></i>&nbsp; Profile</a>
+            <a class="dropdown-item" href="profile"> <i class="fa fa-user" aria-hidden="true" style="color: orange"></i>&nbsp; Profile</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
           </div>

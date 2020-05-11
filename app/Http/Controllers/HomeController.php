@@ -30,4 +30,16 @@ class HomeController extends Controller
         Auth::logout();
         return redirect('/login');
       }
+      public function getSignin() {
+          return view ('user.signin');
+
+      }
+      public function postSignin(Request $request) {
+          $this->validate($request, [
+              'email' => 'email|required',
+              'password' => 'required|min:4',
+          ]);
+      }
 }
+
+
